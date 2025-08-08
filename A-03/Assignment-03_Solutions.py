@@ -2,6 +2,7 @@ import doctest
 
 # --- Conditional Statements ---
 
+# 1. Categorize temperature based on input value.
 def check_temperature(temp: float) -> str:
     """Categorizes temperature as Cold, Warm, or Hot.
 
@@ -19,6 +20,8 @@ def check_temperature(temp: float) -> str:
     else:
         return "Hot"
 
+
+# 2. Evaluate a model's performance based on its accuracy score.
 def evaluate_model_accuracy(accuracy: int) -> str:
     """Evaluates a model based on its accuracy percentage.
 
@@ -40,6 +43,8 @@ def evaluate_model_accuracy(accuracy: int) -> str:
     else:
         return "Poor Model"
 
+
+# 3. Determine if a given integer is even or odd.
 def check_even_or_odd(dataset_size: int) -> str:
     """Determines if a number is Even or Odd.
 
@@ -53,6 +58,8 @@ def check_even_or_odd(dataset_size: int) -> str:
     else:
         return "Odd"
 
+
+# 4. Compare two model loss values to determine the better model.
 def compare_model_loss(model_1_loss: float, model_2_loss: float) -> str:
     """Compares two models based on their loss values. Lower is better.
 
@@ -70,6 +77,8 @@ def compare_model_loss(model_1_loss: float, model_2_loss: float) -> str:
     else:
         return "Both models have the same performance."
 
+
+# 5. Check if a message is spam based on keywords.
 def check_for_spam(message: str) -> str:
     """Checks if a message contains spam keywords.
 
@@ -87,6 +96,8 @@ def check_for_spam(message: str) -> str:
 
 # --- Nested If-Else ---
 
+
+# 6. Determine event eligibility based on age and number of published papers.
 def check_eligibility_for_talk(age: int, papers: int) -> str:
     """Checks eligibility for a talk based on age and published papers.
 
@@ -105,6 +116,8 @@ def check_eligibility_for_talk(age: int, papers: int) -> str:
     else:
         return "Not Eligible"
 
+
+# 7. Check if a model is ready for deployment based on accuracy and latency.
 def check_deployment_readiness(accuracy: float, latency: int) -> str:
     """Checks if a model is ready for production based on accuracy and latency.
 
@@ -123,6 +136,8 @@ def check_deployment_readiness(accuracy: float, latency: int) -> str:
     else:
         return "Not Suitable for Deployment"
 
+
+# 8. Assess dataset quality based on the number of samples and missing value percentage.
 def assess_dataset_quality(samples: int, missing_percentage: float) -> str:
     """Assesses dataset quality based on samples and missing values.
 
@@ -141,6 +156,8 @@ def assess_dataset_quality(samples: int, missing_percentage: float) -> str:
     else:
         return "Insufficient Data"
 
+
+# 9. Check data usability based on its source and user consent.
 def check_data_usability(data_source: str, consent: str) -> str:
     """Checks data usability based on source and consent.
 
@@ -159,6 +176,8 @@ def check_data_usability(data_source: str, consent: str) -> str:
         else:
             return "Ethical Issue"
 
+
+# 10. Suggest a machine learning model based on problem type and dataset size.
 def select_model(problem_type: str, dataset_size: int) -> str:
     """Selects a model based on problem type and dataset size.
 
@@ -184,6 +203,8 @@ def select_model(problem_type: str, dataset_size: int) -> str:
 
 # --- While Loops ---
 
+
+# 11. Simulate model training by reducing loss in a while loop.
 def simulate_loss_reduction(initial_loss: float) -> list:
     """Simulates loss reduction until it's <= 0.1.
 
@@ -197,6 +218,8 @@ def simulate_loss_reduction(initial_loss: float) -> list:
         loss_history.append(loss)
     return loss_history
 
+
+# 12. Create a simple interactive chatbot that runs in a loop.
 def chatbot():
     """A simple chatbot that responds until the user types 'exit'.
     This function is interactive and not tested with doctest.
@@ -208,6 +231,8 @@ def chatbot():
             print("Bot: I am learning...")
     print("Bot: Goodbye!")
 
+
+# 13. Use a while loop to count from 1 up to a specified number.
 def count_up_to(dataset_size: int) -> int:
     """Counts from 1 up to a given number using a while loop.
 
@@ -223,6 +248,8 @@ def count_up_to(dataset_size: int) -> int:
         count = i
     return count
 
+
+# 14. Simulate and log training epochs using a while loop.
 def train_epochs(total_epochs: int) -> list:
     """Simulates training epochs and returns the log.
 
@@ -237,6 +264,8 @@ def train_epochs(total_epochs: int) -> list:
         current_epoch += 1
     return log
 
+
+# 15. Repeatedly divide a number by 2 in a loop until it is <= 1.
 def divide_by_two_until_one(number: float) -> list:
     """Keeps dividing a number by 2 until it's <= 1.
 
@@ -253,6 +282,8 @@ def divide_by_two_until_one(number: float) -> list:
 
 # --- Combine Questions ---
 
+
+# 16. Check password strength using nested conditional logic.
 def check_password_strength(password: str) -> str:
     """Checks password strength based on length and content.
 
@@ -271,6 +302,8 @@ def check_password_strength(password: str) -> str:
     else:
         return "Invalid Password"
 
+
+# 17. Simulate learning rate decay using a while loop.
 def adjust_learning_rate(learning_rate: float = 0.1) -> list:
     """Adjusts learning rate by dividing by 2 until it's <= 0.001.
 
@@ -283,6 +316,8 @@ def adjust_learning_rate(learning_rate: float = 0.1) -> list:
         history.append(learning_rate)
     return history
 
+
+# 18. Use a while loop and conditional to count even numbers up to a limit.
 def count_even_labels(dataset_labels: int) -> int:
     """Counts the number of even labels from 1 to dataset_labels.
 
@@ -299,6 +334,8 @@ def count_even_labels(dataset_labels: int) -> int:
         i += 1
     return count
 
+
+# 19. Simulate accuracy improvement in a while loop.
 def simulate_accuracy_increase(accuracy: int = 50) -> list:
     """Simulates accuracy increasing by 5 until it reaches 95.
 
@@ -311,6 +348,8 @@ def simulate_accuracy_increase(accuracy: int = 50) -> list:
         log.append(f"Current Accuracy: {accuracy}%")
     return log
 
+
+# 20. Evaluate a score using a chain of if/elif/else conditions.
 def evaluate_marks(marks: int) -> str:
     """Evaluates a student's level based on marks.
 
@@ -329,6 +368,7 @@ def evaluate_marks(marks: int) -> str:
         return "Needs Improvement"
 
 
+# --- Doctest Runner ---
 if __name__ == "__main__":
     print("--- Running Assignment 03 Doctests ---")
     results = doctest.testmod(verbose=False)
