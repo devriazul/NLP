@@ -28,7 +28,3 @@ The course includes hands-on experience with multiple real-world projects, inclu
 *   Building a chatbot
 *   Developing a spam detector
 
-## Pricing and Duration
-
-*   **Price:** ৳4020
-*   **Duration:** 5 months of live classes with lifetime access to course materials.
